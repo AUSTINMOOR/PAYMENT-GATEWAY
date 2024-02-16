@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    "
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contents">
+        <div class="cards-content">
+          <div class="card-1">
+            <span id="cvc">000</span>
+          </div>
+          <div class="card-2">
+            <div class="type">
+              <div class="verve">
+                <img src="logo-master-card-free-download-PNG.png" alt="" />
+                <div class="verve-icon"></div>
+              </div>
+              <span class="number">
+                <span id="card-digit">0000 0000 0000 0000</span>
+              </span>
+              <div class="name-number">
+                <pre id="client-name">JANE APPLESEED</pre>
+                <div id="expiry-date">
+                  <span id="expiry-month">00 </span>
+                  /
+                  <span id="expiry-year"> 00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INPUT SECTION -->
+      <div class="all-input">
+        <form id="form">
+          <div class="input-section">
+            <label for="username">CARDHOLDER NAME</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="e.g Jane Appleseed"
+              id="username"
+            />
+            <!-- <a href="">love</a> -->
+
+            <div class="error"></div>
+          </div>
+          <div class="input-section">
+            <label for="number">CARD NUMBER</label>
+            <input
+              type="text"
+              placeholder="e.g 0000 0000 0000 0000"
+              data-mask="0000 0000 0000 0000"
+              name="number"
+              id="number"
+            />
+
+            <div class="error"></div>
+          </div>
+
+          <!-- OTHER CARD DETAILS -->
+
+          <!-- FOR EXPIRY DATE -->
+          <div class="Others">
+            <div class="input-section">
+              <label for="username">EXP DATE</label>
+              <input
+                type="text"
+                name="exp-date"
+                placeholder="MM"
+                data-mask="00"
+                id="exp"
+              />
+
+              <div class="error"></div>
+            </div>
+
+            <!-- FOR MONTH -->
+
+            <div class="input-section" id="for-month">
+              <label for="username">(MM/YY)</label>
+              <input
+                type="text"
+                name="username"
+                maxlength="2"
+                placeholder="YY"
+                id="month"
+              />
+
+              <div class="error"></div>
+            </div>
+
+            <!-- FOR CVV -->
+            <div class="input-section" id="for-cvv">
+              <label for="username">CVC</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="e.g 123"
+                data-mask="000"
+                id="cvv"
+              />
+
+              <div class="error" style="margin-left: 20px"></div>
+            </div>
+          </div>
+          <button id="submit">Confirm</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js
+
+
+
+     "></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
